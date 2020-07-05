@@ -8,3 +8,10 @@
 
 ### Running...
 ```docker run -p 8000:8000 gilsongabriel/maratona-full-cycle-3-desafio-4```
+
+### Admin Superuser
+```
+Usuário: admin
+Email: admin@user.com
+Senha: secret123 
+```
