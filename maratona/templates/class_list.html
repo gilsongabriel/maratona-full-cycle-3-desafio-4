@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="row text-center">
+        <div class="col-md">
+            <h4><a href="/">Home</a></h4>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md">
+            <h3>Lista de Aulas</h3>
+        </div>
+    </div>
+    <table class="table table-sm table-striped table-condensed table-light">
+        <thead>
+        <tr>
+            <th class="text-center">#</th>
+            <th>Descrição</th>
+            <th>Tutor</th>
+            <th class="text-center">Data</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for class in classes %}
+            <tr>
+                <td class="text-center"><a href="{{ class.url }}" target="_blank">Assistir</a></td>
+                <td>{{ class.description }}</td>
+                <td>{{ class.tutor }}</td>
+                <td class="text-center">{{ class.date|date:"d/m/Y" }}</td>
+            </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+{% endblock %}

@@ -1,0 +1,11 @@
+[
+  {
+    "model": "app.category",
+    "pk": 1,
+    "fields": {
+      "description": null,
+      "tutor": "categoria test",
+      "date": true
+    }
+  }
+]
