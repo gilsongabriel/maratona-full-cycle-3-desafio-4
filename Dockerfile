@@ -1,6 +1,7 @@
 FROM python:3.8.3-alpine3.12
 
-RUN useradd -ms /bin/bash django
+#RUN useradd -ms /bin/bash django
+RUN adduser --disabled-password django
 
 USER django
 
